@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 // Xms -> starting memory pool 2GB and Xmx - the maximum memory pool 4GB
 // NOTE: When running those tests you may want to adjust those values as well
 // as the param value, otherwise -> java.lang.OutOfMemoryError may occur
-@Fork(value = 2, jvmArgs = {"-Xms2G", "-Xmx4G"})
+@Fork(value = 2, jvmArgs = {"-Xms2G", "-Xmx10G"})
 @State(Scope.Benchmark)
 @Warmup(iterations = 1, time = 1)
 @Measurement(iterations = 2, time = 1)
